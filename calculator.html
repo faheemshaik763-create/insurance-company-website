@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Premium Calculator & Tax Savings | Faheem Insurance</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fas fa-calculator"></i> Real-Time Quote Estimator</span>
+        <span><i class="fas fa-lock"></i> SSL Encrypted & No Spam Guarantee</span>
+      </div>
+      <div class="top-action">
+        <a href="claims.html"><i class="fas fa-file-invoice"></i> Track Claim</a>
+        <a href="portal.html"><i class="fas fa-user-lock"></i> Client Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-badge"><i class="fas fa-shield-halved"></i></div>
+          Faheem <span>Insurance</span>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="calculator.html" class="nav-link active">Calculator</a></li>
+          <li><a href="claims.html" class="nav-link">Claims</a></li>
+          <li><a href="portal.html" class="nav-link">Client Portal</a></li>
+          <li><a href="network.html" class="nav-link">Network</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="calculator.html" class="btn btn-primary"><i class="fas fa-calculator"></i> Quick Quote</a>
+          <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section style="background: linear-gradient(135deg, #0F172A, #1E293B); color: white; padding: 4rem 0;">
+    <div class="container" style="text-align: center;">
+      <span class="hero-badge"><i class="fas fa-sliders"></i> Premium Estimator</span>
+      <h1 style="font-size: 3rem; font-weight: 800; color: white; margin-top: 0.5rem;">Interactive Premium Calculator</h1>
+      <p style="color: #94A3B8; max-width: 600px; margin: 1rem auto 0 auto; font-size: 1.1rem;">Customize your plan parameters below to calculate exact monthly rates, rider add-ons, and tax savings.</p>
+    </div>
+  </section>
+
+  <!-- Calculator Controls & Live Results -->
+  <section class="section">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="grid-2" style="align-items: flex-start;">
+          <!-- Controls -->
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-dark);"><i class="fas fa-sliders" style="color: var(--accent-teal);"></i> Policy Parameters</h3>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-plan-type">Insurance Category</label>
+              <select id="calc-plan-type" class="form-control">
+                <option value="health">Comprehensive Health Shield Supreme</option>
+                <option value="life">Term Life Security Plan</option>
+                <option value="auto">Automobile & Vehicle Policy</option>
+                <option value="home">Home & Property Protection</option>
+                <option value="business">Commercial Business Cover</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-age">
+                Insured Person's Age: <span id="calc-age-val" class="range-slider-val">30 Years</span>
+              </label>
+              <input type="range" id="calc-age" min="18" max="75" value="30" class="form-control" style="padding: 0; cursor: pointer;">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-coverage">
+                Coverage Sum Insured ($): <span id="calc-coverage-val" class="range-slider-val">$250,000</span>
+              </label>
+              <input type="range" id="calc-coverage" min="25000" max="2000000" step="25000" value="250000" class="form-control" style="padding: 0; cursor: pointer;">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-term">Policy Tenure (Duration)</label>
+              <select id="calc-term" class="form-control">
+                <option value="1">1 Year Plan (Annual Renewable)</option>
+                <option value="5">5 Years Tenure</option>
+                <option value="10" selected>10 Years Tenure (Discounted)</option>
+                <option value="20">20 Years Tenure (Maximum Savings)</option>
+              </select>
+            </div>
+
+            <!-- Optional Rider Add-ons -->
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+              <h4 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-dark);"><i class="fas fa-shield-plus" style="color: var(--primary-blue);"></i> Optional Rider Specifications</h4>
+              
+              <label style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; cursor: pointer;">
+                <input type="checkbox" class="rider-checkbox" value="15" style="width: 18px; height: 18px;">
+                <span>Critical Illness Rider (+$15/mo for 36 illnesses)</span>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; cursor: pointer;">
+                <input type="checkbox" class="rider-checkbox" value="12" style="width: 18px; height: 18px;">
+                <span>Zero-Depreciation Auto Rider (+$12/mo)</span>
+              </label>
+
+              <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                <input type="checkbox" class="rider-checkbox" value="10" style="width: 18px; height: 18px;">
+                <span>Hospital Daily Cash Benefit Rider (+$10/mo)</span>
+              </label>
+            </div>
+
+          </div>
+
+          <!-- Live Result Box -->
+          <div>
+            <div class="calc-result-box">
+              <span style="background: rgba(45, 212, 191, 0.15); color: #2DD4BF; border: 1px solid rgba(45, 212, 191, 0.3); font-weight: 700; font-size: 0.85rem; padding: 0.35rem 1rem; border-radius: 20px;">Estimated Premium</span>
+              <p style="color: #94A3B8; font-size: 0.95rem; margin-top: 1rem;">Estimated Monthly Premium</p>
+              <div id="calc-monthly-price" class="calc-price">$38</div>
+              <p id="calc-annual-price" style="color: #CBD5E1; font-weight: 600; font-size: 1.1rem;">$437 / year</p>
+              
+              <div style="background: rgba(13, 148, 136, 0.15); border: 1px solid var(--accent-teal); color: #2DD4BF; width: 100%; padding: 0.75rem; border-radius: 8px; margin: 1.25rem 0; font-size: 0.9rem;">
+                <i class="fas fa-piggy-bank"></i> Est. Tax Exemption Savings: <strong id="calc-tax-savings">$131</strong> / year
+              </div>
+
+              <button class="btn btn-secondary" data-modal-target="quote-modal" style="width: 100%; margin-top: 1rem;"><i class="fas fa-lock"></i> Lock This Rate & Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="quote-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-close">&times;</div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-dark);"><i class="fas fa-shield-alt" style="color: var(--accent-teal);"></i> Lock Your Estimated Premium</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Enter your contact information below. Our senior advisor team will lock this rate for 30 days and send official policy documents.</p>
+      
+      <form>
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-check-circle"></i> Confirm & Send Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><i class="fas fa-shield-halved" style="color: var(--accent-teal);"></i> Faheem Insurance</div>
+          <p class="footer-desc">Providing trustworthy insurance policies, rapid claim settlements, and personalized risk guidance worldwide.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation Tabs</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Portals & Help</h4>
+          <ul class="footer-links">
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="claims.html">Claims Portal</a></li>
+            <li><a href="portal.html">Client Portal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Headquarters</h4>
+          <p style="font-size: 0.9rem;"><i class="fas fa-phone"></i> +1 (800) 555-FAHEEM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Faheem Insurance Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

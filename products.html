@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Products Catalog & Specifications | Faheem Insurance</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fas fa-boxes-packing"></i> Individual & Group Plans</span>
+        <span><i class="fas fa-percent"></i> Tax Exemption Certificate Included</span>
+      </div>
+      <div class="top-action">
+        <a href="claims.html"><i class="fas fa-file-invoice"></i> Track Claim</a>
+        <a href="portal.html"><i class="fas fa-user-lock"></i> Client Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-badge"><i class="fas fa-shield-halved"></i></div>
+          Faheem <span>Insurance</span>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+          <li><a href="claims.html" class="nav-link">Claims</a></li>
+          <li><a href="portal.html" class="nav-link">Client Portal</a></li>
+          <li><a href="network.html" class="nav-link">Network</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="calculator.html" class="btn btn-primary"><i class="fas fa-calculator"></i> Quick Quote</a>
+          <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title Banner -->
+  <section style="background: linear-gradient(135deg, #0F172A, #1E293B); color: white; padding: 4rem 0;">
+    <div class="container" style="text-align: center;">
+      <span class="hero-badge"><i class="fas fa-shield-cat"></i> Product Catalog</span>
+      <h1 style="font-size: 3rem; font-weight: 800; color: white; margin-top: 0.5rem;">Insurance Products Catalog</h1>
+      <p style="color: #94A3B8; max-width: 600px; margin: 1rem auto 0 auto; font-size: 1.1rem;">Explore detailed coverage specifications, policy terms, and riders for every lifestyle requirement.</p>
+    </div>
+  </section>
+
+  <!-- Detailed Product Grid with Rich Visual Images -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+
+        <!-- Product 1: Health Shield -->
+        <div id="health" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-health.jpg" alt="Health Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: var(--light-teal); color: #0F766E; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Health & Medical</span>
+            <span style="color: var(--accent-emerald); font-weight: 700; font-size: 0.85rem;">From $35/mo</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Faheem Health Shield Supreme</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Comprehensive medical protection featuring cashless admission at 10,000+ hospitals, daycare coverage, and critical illness riders.</p>
+          <a href="calculator.html?type=health" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Health Rate</a>
+        </div>
+
+        <!-- Product 2: Life Security -->
+        <div id="life" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-life.jpg" alt="Life Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: #DBEAFE; color: #1E40AF; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Term Life Security</span>
+            <span style="color: var(--primary-blue); font-weight: 700; font-size: 0.85rem;">From $25/mo</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Term Life Security Plan</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Secure your family's future with tax-free death benefits up to $5,000,000, terminal illness rider, and disability waivers.</p>
+          <a href="calculator.html?type=life" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Life Rate</a>
+        </div>
+
+        <!-- Product 3: Auto Cover -->
+        <div id="auto" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-auto.jpg" alt="Auto Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: #FEF3C7; color: #92400E; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Zero Dep Motor</span>
+            <span style="color: var(--accent-gold); font-weight: 700; font-size: 0.85rem;">From $40/mo</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Automobile & Fleet Motor Shield</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Drive with total peace of mind. Zero depreciation on parts, engine protector rider, and 24/7 roadside towing assistance.</p>
+          <a href="calculator.html?type=auto" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Auto Rate</a>
+        </div>
+
+        <!-- Product 4: Home Protection -->
+        <div id="home" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-home.jpg" alt="Home Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: #F1F5F9; color: var(--text-dark); font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Property & Estate</span>
+            <span style="color: var(--text-dark); font-weight: 700; font-size: 0.85rem;">From $20/mo</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Homeowner & Property Protection</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Protect home structure, luxury appliances, jewelry, and third-party liabilities against fire, flood, and burglary.</p>
+          <a href="calculator.html?type=home" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Home Rate</a>
+        </div>
+
+        <!-- Product 5: Business Risk -->
+        <div id="business" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-business.jpg" alt="Business Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: #E0E7FF; color: #3730A3; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Commercial Enterprise</span>
+            <span style="color: #3730A3; font-weight: 700; font-size: 0.85rem;">Custom Quote</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Commercial Business Risk Shield</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Corporate group health medical policies, cyber liability, business interruption, and directors & officers coverage.</p>
+          <a href="calculator.html?type=business" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Business Rate</a>
+        </div>
+
+        <!-- Product 6: Global Travel -->
+        <div id="travel" class="card" style="padding: 2rem;">
+          <img src="assets/images/prod-travel.jpg" alt="Travel Insurance" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <span style="background: #ECFDF5; color: #065F46; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem;">Worldwide Travel</span>
+            <span style="color: #065F46; font-weight: 700; font-size: 0.85rem;">From $15/trip</span>
+          </div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Global Travel Shield</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Emergency overseas medical treatment, passport loss replacement, flight cancellation, and lost baggage compensation.</p>
+          <a href="calculator.html?type=travel" class="btn btn-primary" style="width: 100%;"><i class="fas fa-calculator"></i> Calculate Travel Rate</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><i class="fas fa-shield-halved" style="color: var(--accent-teal);"></i> Faheem Insurance</div>
+          <p class="footer-desc">Providing trustworthy insurance policies, rapid claim settlements, and personalized risk guidance worldwide.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation Tabs</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Portals & Help</h4>
+          <ul class="footer-links">
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="claims.html">Claims Portal</a></li>
+            <li><a href="portal.html">Client Portal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Headquarters</h4>
+          <p style="font-size: 0.9rem;"><i class="fas fa-phone"></i> +1 (800) 555-FAHEEM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Faheem Insurance Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client & Policyholder Portal | Faheem Insurance</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fas fa-lock"></i> 256-Bit SSL Encrypted Client Portal</span>
+        <span><i class="fas fa-shield"></i> Officer Faheem Verified</span>
+      </div>
+      <div class="top-action">
+        <a href="claims.html"><i class="fas fa-file-invoice"></i> Track Claim</a>
+        <a href="contact.html"><i class="fas fa-headset"></i> Support Desk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-badge"><i class="fas fa-shield-halved"></i></div>
+          Faheem <span>Insurance</span>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+          <li><a href="claims.html" class="nav-link">Claims</a></li>
+          <li><a href="portal.html" class="nav-link active">Client Portal</a></li>
+          <li><a href="network.html" class="nav-link">Network</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="calculator.html" class="btn btn-primary"><i class="fas fa-calculator"></i> Quick Quote</a>
+          <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section style="background: linear-gradient(135deg, #0F172A, #1E293B); color: white; padding: 4rem 0;">
+    <div class="container" style="text-align: center;">
+      <span class="hero-badge"><i class="fas fa-user-shield"></i> Policyholder Access</span>
+      <h1 style="font-size: 3rem; font-weight: 800; color: white; margin-top: 0.5rem;">Client & Policyholder Portal</h1>
+      <p style="color: #94A3B8; max-width: 600px; margin: 1rem auto 0 auto; font-size: 1.1rem;">Manage active policies, download your digital insurance ID card, and pay premiums securely online.</p>
+    </div>
+  </section>
+
+  <!-- Portal Container -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Login Box Simulator -->
+      <div id="portal-login-form" class="card" style="max-width: 500px; margin: 0 auto; padding: 2.5rem;">
+        <h3 style="font-size: 1.5rem; text-align: center; margin-bottom: 0.5rem; color: var(--text-dark);"><i class="fas fa-user-lock" style="color: var(--accent-teal);"></i> Sign In to Policy Portal</h3>
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Enter your registered email and policy ID to access your dashboard.</p>
+
+        <form>
+          <div class="form-group">
+            <label class="form-label">Policy Number / Member ID</label>
+            <input type="text" class="form-control" value="POL-99420-F" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password / PIN</label>
+            <input type="password" class="form-control" value="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.8rem;"><i class="fas fa-right-to-bracket"></i> Access My Dashboard</button>
+        </form>
+      </div>
+
+      <!-- Dashboard Content (Revealed on Login) -->
+      <div id="portal-dashboard-content" style="display: none;">
+        
+        <!-- Welcome Banner -->
+        <div style="background: linear-gradient(135deg, var(--primary-blue), #1D4ED8); color: white; padding: 2rem; border-radius: var(--radius-md); margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2 style="color: white; font-size: 1.8rem;">Welcome Back, Insured Member!</h2>
+            <p style="color: #DBEAFE; font-size: 0.95rem;">Policyholder Account: <strong>POL-99420-F</strong> | Executive Officer: <strong>Officer Faheem</strong></p>
+          </div>
+          <a href="#" onclick="location.reload();" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.4);"><i class="fas fa-power-off"></i> Sign Out</a>
+        </div>
+
+        <div class="grid-2">
+          
+          <!-- Active Policies List -->
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.25rem; color: var(--text-dark);"><i class="fas fa-folder-open" style="color: var(--accent-teal);"></i> Active Insurance Policies</h3>
+
+            <div class="card" style="margin-bottom: 1.25rem; border-left: 4px solid var(--accent-teal);">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="font-size: 1.15rem;">Health Shield Supreme Plan</h4>
+                <span style="background: var(--light-teal); color: #0F766E; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem;">ACTIVE</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">Coverage Sum: <strong>$500,000</strong> | Cashless Hospital Card Included</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Renewal Date: Nov 15, 2026</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 1.25rem; border-left: 4px solid var(--primary-blue);">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="font-size: 1.15rem;">Automobile Zero-Dep Cover</h4>
+                <span style="background: #DBEAFE; color: #1E40AF; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem;">ACTIVE</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.4rem;">Insured Vehicle: Tesla Model 3 | Zero Dep Rider Included</p>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Renewal Date: Jan 20, 2027</p>
+            </div>
+
+          </div>
+
+          <!-- Digital ID Card Generator -->
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.25rem; color: var(--text-dark);"><i class="fas fa-id-card" style="color: var(--accent-gold);"></i> Digital Insurance ID Card</h3>
+
+            <div class="policy-id-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.1rem; color: white;">
+                  <i class="fas fa-shield-halved" style="color: var(--accent-teal);"></i> FAHEEM INSURANCE
+                </div>
+                <span style="background: rgba(255,255,255,0.2); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 10px;">EXECUTIVE TIER</span>
+              </div>
+
+              <p style="font-size: 0.8rem; color: #94A3B8; text-transform: uppercase;">POLICYHOLDER NAME</p>
+              <h4 style="color: white; font-size: 1.25rem; margin-bottom: 1rem;">FAHEEM INSURED MEMBER</h4>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem;">
+                <div>
+                  <span style="color: #94A3B8; display: block; font-size: 0.75rem;">POLICY ID</span>
+                  <strong>POL-99420-F</strong>
+                </div>
+                <div>
+                  <span style="color: #94A3B8; display: block; font-size: 0.75rem;">VALID THROUGH</span>
+                  <strong>11/2028</strong>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: flex-end; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.15);">
+                <div>
+                  <span style="font-size: 0.75rem; color: #94A3B8;">AUTHORIZED SIGNATURE</span>
+                  <p style="font-family: cursive; color: #2DD4BF; font-size: 1.1rem;">Officer Faheem</p>
+                </div>
+                <i class="fas fa-qrcode" style="font-size: 2.2rem; color: white;"></i>
+              </div>
+            </div>
+
+            <button onclick="alert('Downloading high-resolution digital policy certificate PDF...');" class="btn btn-secondary" style="width: 100%; margin-top: 1.25rem;"><i class="fas fa-file-pdf"></i> Download Official Digital Policy Card</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><i class="fas fa-shield-halved" style="color: var(--accent-teal);"></i> Faheem Insurance</div>
+          <p class="footer-desc">Providing trustworthy insurance policies, rapid claim settlements, and personalized risk guidance worldwide.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation Tabs</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Portals & Help</h4>
+          <ul class="footer-links">
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="claims.html">Claims Portal</a></li>
+            <li><a href="portal.html">Client Portal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Headquarters</h4>
+          <p style="font-size: 0.9rem;"><i class="fas fa-phone"></i> +1 (800) 555-FAHEEM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Faheem Insurance Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
